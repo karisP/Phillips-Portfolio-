@@ -1,0 +1,115 @@
+*{
+  font-family: 'EB Garamond', serif;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-image: url(thomas-heintz-769574-unsplash.jpg);
+
+}
+header{
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-size: 30px;
+  background-image:url(yifei-chen-444832-unsplash.jpg);
+
+}
+
+p{
+  text-align: center;
+  font-size: 23px;
+}
+
+.container{
+  width: 100%;
+  height:auto;
+  //add flexbox//
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow:wrap;
+}
+.pics{
+  border: 0px solid;
+  border-radius: 15px;
+  box-shadow: 20px 20px 50px grey;
+  width: 23%;
+  height: 400px;
+  margin:50px;
+}
+
+
+nav{
+  display:flex;
+  justify-content: flex-end;
+  flex-flow: wrap;
+}
+
+span{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-right: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  padding-right: 15px;
+}
+span:last-child{
+  border-right: none;
+}
+
+a:hover{
+  color: #C82828;
+
+}
+div{
+  display: block;
+  text-align: center;
+}
+form{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form{
+  width:500px;
+  border: 5px solid teal;
+  padding: 50px auto;
+}
+
+.form-row{
+  padding: 5px 60px;
+  display: flex;
+}
+.form-row input{
+  align-items: center;
+  flex:1;
+}
+
+.input{
+  margin:5px;
+}
+
+.special{
+  border-right: hidden;
+}
+
+
+@media screen and (min-width: 768px) {
+  .pics{
+    width: 23%;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+  nav{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pics{
+    width: 45%;
+    height:auto;
+    }
+  }
